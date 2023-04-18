@@ -71,3 +71,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Como Usar
+
+- Ao abrir o arquivo, inserir no terminal yarn ou npm i
+
+- Para configurar o bando de dados, abrir um servidor mysql na porta 3306 e rodar o yarn prisma migrate dev ou npm run prisma migrate dev
+
+- Para rodar o projeto, yarn start:dev ou npm run start:dev
+
+
+

@@ -81,6 +81,15 @@ export class FuncionarioService {
     const anosTrabalhados =
       new Date().getFullYear() - new Date(data.data_admissao).getFullYear();
     const bonificacao = data.salario * 0.02 * anosTrabalhados * data.desempenho;
+    console.log({
+      matricula: data.matricula,
+      nome_completo: data.nome_completo,
+      data_admissao: new Date(data.data_admissao),
+      salario: data.salario,
+      data_pagamento: new Date(data.data_pagamento),
+      desempenho: data.desempenho,
+      bonificacao,
+    });
     const funcionario = await this.prisma.funcionario.create({
       data: {
         matricula: data.matricula,
